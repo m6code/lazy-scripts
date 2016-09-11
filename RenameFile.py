@@ -15,8 +15,11 @@ FileNames = os.listdir(path)
 
 #Renames files in the working directory containing %20 with Spaces
 def main():
-    for fileName in FileNames:
-        os.rename(fileName, fileName.replace("%20"," "))
+	try:
+	    for fileName in FileNames:
+	        os.rename(fileName, fileName.replace(" ","%20"))
+	except WindowsError as e:
+		print "There are no files with the %20 character in this directory"
 
 #Calls the main function
 main()
