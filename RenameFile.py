@@ -17,7 +17,7 @@ FileNames = os.listdir(path)
 def main():
 	try:
 	    for fileName in FileNames:
-	        os.rename(fileName, fileName.replace(" ","%20"))
+	        os.rename(fileName, fileName.replace("%20"," "))
 	except WindowsError as e:
 		print "There are no files with the %20 character in this directory"
 
