@@ -47,6 +47,7 @@ DOSKEY la=ls -a
 DOSKEY lla=ls -la
 DOSKEY open=start
 DOSKEY cd~=cd %userprofile%
+DOSKEY home=cd %userprofile%
 DOSKEY dadb=cd C:\adb
 DOSKEY pbs=pocketbase serve 
 
