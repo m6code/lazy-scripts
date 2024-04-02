@@ -5,5 +5,6 @@
 #NumpadIns::Send  {Volume_Mute}
 #NumpadUp::Send   {Volume_Up}
 #NumpadDown::Send   {Volume_Down}
+^!t::Run cmd
 
 
